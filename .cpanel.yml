@@ -1,0 +1,17 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/
+    #add files
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp howtobuynft.html $DEPLOYPATH
+    #add directories
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js
+    - /bin/cp -R img
+    - /bin/cp -R events $DEPLOYPATH
+    - /bin/cp -R hollenhors $DEPLOYPATH
+    - /bin/cp -R sandwiches_you_will_like $DEPLOYPATH
+    - /bin/cp -R andrea_maye_jenkins $DEPLOYPATH
+    - /bin/cp -R img
+    # - /bin/cp -R
